@@ -337,7 +337,7 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Get in touch with me</h2>
-							<form method="post" action="#" onsubmit="sendEmail(), reset(); return false">
+							<form action="https://formsubmit.co/vpokorny123@gmail.com" method="POST">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -377,12 +377,14 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
          <script src="assets/js/email.js"></script>
-         <script src="https://smtpjs.com/v3/smtp.js"></script>
+         <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
          <script>
             function sendEmail(){
                Email.send({
-                  SecureToken: "a49b9fee-eb0f-480c-9977-6ccfcf81d7bb",
-                  To: 'vpokorny123@gmail.com',
+                  Host: "smtp.gmail.com"
+                  Username: "pokor076@umn.edu"
+                  Password: "Rolcaw123123123!"
+                  To: 'pokor076@umn.edu',
                   From: document.getElementById("email").value,
                   Subject: "New Message",
                   Body: "Name:" + document.getElementById("name").value
@@ -390,10 +392,10 @@
                   + "<br> Phone #: " + document.getElementById("phone").value
                   + "<br> Message: " + document.getElementById("message").value
                }).then(
-                  message => alert("Message Sent!")
+                  message => alert(message)
                );
             }
-         </script>
+         </script> -->
          
 
 	</body>
